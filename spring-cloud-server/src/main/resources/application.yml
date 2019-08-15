@@ -7,7 +7,7 @@ spring:
     config:
       server:
         git:
-          uri: https://code.idc.hexun.com/lin/spring-cloud-config.git
+          uri: https://code.idc.hexun.com/tech_ywkf/global.git
           username: yanglin2016@staff.hexun.com
           password: gitpwd123
           search-paths: '{application}'
