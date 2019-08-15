@@ -1,0 +1,13 @@
+server:
+  port: 8181
+spring:
+  application:
+    name: global-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://code.idc.hexun.com/lin/spring-cloud-config.git
+          username: yanglin2016@staff.hexun.com
+          password: gitpwd123
+          search-paths: '{application}'
