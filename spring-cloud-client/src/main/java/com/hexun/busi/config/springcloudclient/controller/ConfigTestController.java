@@ -19,7 +19,13 @@ public class ConfigTestController {
     @Resource
     Environment environment;
 
-
+    @RequestMapping("/")
+    public String index(@RequestParam(value = "key", required = false) String key ) {
+        if(StringUtils.isEmpty(key)){
+            return environment.toString();
+        }
+        return environment.getProperty(key);
+    }
 
     @RequestMapping("/config")
     public String getProperty(@RequestParam(value = "key", required = false) String key ) {
