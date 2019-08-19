@@ -6,6 +6,12 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
+/**
+ * 启动类
+ *
+ * @author yl
+ * @date 2019-8-14
+ */
 @EnableDiscoveryClient
 @SpringBootApplication
 public class SpringCloudClientApplication extends SpringBootServletInitializer {

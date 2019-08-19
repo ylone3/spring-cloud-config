@@ -6,6 +6,13 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.cloud.config.server.EnableConfigServer;
 
+
+/**
+ * 启动类
+ *
+ * @author yl
+ * @date 2019-8-14
+ */
 @EnableConfigServer
 @SpringBootApplication
 public class SpringCloudServerApplication extends SpringBootServletInitializer {
