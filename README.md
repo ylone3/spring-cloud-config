@@ -5,16 +5,9 @@
 server:
 需要配置好配置文件放置的github仓库地址:
 appliciation.yml
-spring:
-  application:
-    name: global-config-server
-  cloud:
-    config:
-      server:
-        git:
-          uri:配置文件放置的github仓库地址
-          username: 登录账户
-          password: 登录密码
+spring.application.cloud.config.server.gi.uri:配置文件放置的github仓库地址
+spring.application.cloud.config.server.gi.username:登录账户
+spring.application.cloud.config.server.gi.password:登录密码
  在git上创建配置中心仓库后，在服务器部署server项目。
  
  client：
